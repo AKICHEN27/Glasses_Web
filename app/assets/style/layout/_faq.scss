@@ -1,0 +1,57 @@
+.faq {
+  padding-bottom: 128px;
+  @include desktop {
+    padding-bottom: 72px;
+  }
+  @include pad {
+    padding-bottom: 36px;
+  }
+  &-title {
+    font-size: $font-size-4xl;
+    font-weight: $font-weight-bold;
+    margin: 96px 0 60px 0;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+    @include desktop {
+      margin: 60px 0 40px 0;
+    }
+    @include pad {
+      margin: 28px 0 24px 0;
+      font-size: $font-size-xl;
+    }
+  }
+  &-subtitle {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    padding-bottom: 36px;
+    @include desktop {
+      padding-bottom: 32px;
+    }
+    @include pad {
+      padding-bottom: 24px;
+    }
+  }
+  &-content {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    @include pad {
+      font-size: $font-base;
+    }
+  }
+  &-ans {
+    font-size: $font-base;
+    width: 920px;
+    margin-left: 95px;
+    padding: 16px 0 32px 0;
+    @include desktop {
+      width: 630px;
+      margin-right: 60px;
+      padding-bottom: 24px;
+    }
+    @include pad {
+      width: 345px;
+      margin: 0 auto;
+      padding: 8px 0 20px 0 ;
+    }
+  }
+}

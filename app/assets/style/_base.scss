@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto', sans-serif; 
+  line-height: 1.5;
+}

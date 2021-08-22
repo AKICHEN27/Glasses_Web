@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-nav justify-content-between align-items-center">
+        <a href="./index.html" class="logo"><img src="./assets/images/week3/logo.png" alt="logo"></a>
+        <ul class="nav d-flex">
+          <li class="navbar"><a href="#" class="navbar-link">系列鏡框</a></li>
+          <li class="navbar"><a href="#" class="navbar-link">門市據點</a></li>
+          <li class="navbar"><a href="#" class="navbar-link">部落格</a></li>
+          <li class="navbar"><a href="./faq.html" class="navbar-link">常見問題</a></li>
+        </ul>
+      </div>
+    </header>
+  
+    <%- contents %>
+  
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content d-flex justify-content-between">
+            <div class="footer-menu">
+              <ul class="d-flex align-items-end">
+                <li class="nav"><a href="./index.html" class="nav-link">首頁</a></li>
+                <li class="nav"><a href="#" class="nav-link">系列鏡框</a></li>
+                <li class="nav"><a href="#" class="nav-link">門市據點</a></li>
+                <li class="nav"><a href="#" class="nav-link">部落格</a></li>
+                <li class="nav"><a href="./faq.html" class="nav-link">常見問題</a></li>
+              </ul>
+              <ul class="address-link">
+                <li class="d-flex">
+                  <img src="./assets/images/week3/icon-phone.svg" alt="phone" class="address-icon text-align-center">
+                  <a href="tel:0800-000-000" class="d-flex align-items-center">0800-000-000</a>
+                </li>
+                <li class="d-flex">
+                  <img src="./assets/images/week3/icon-mail.svg" alt="mail" class="address-icon">
+                  <a href="mailto:glasses@business.com" class="d-flex align-items-cebter">glasses@business.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <ul class="d-flex">
+                <li class="navbar"><a href="#" class="icon-link"><img src="./assets/images/week3/icon-fb.svg"
+                      alt="facebook" class="icon"></a></li>
+                <li class="navbar"><a href="#" class="icon-link"><img src="./assets/images/week3/icon-ig.svg" alt="ig"
+                      class="icon"></a></li>
+                <li class="navbar"><a href="#" class="icon-link"><img src="./assets/images/week3/icon-line.svg" alt="line"
+                      class="icon"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright d-flex justify-content-between">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <ul class="copyright-menu d-flex">
+              <li><a href="#" class="items">隱私權政策</a></li>
+              <li><a href="#" class="items">服務條款</a></li>
+            </ul>
+          </div>
+        </div>
+  
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
+  </body>
+</html>

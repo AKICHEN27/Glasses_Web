@@ -1,0 +1,350 @@
+// banner區塊
+.banner {
+  background: url(../images/week3/banner.png) center center;
+  height: 840px;
+  background-size: cover;
+  @include pad {
+    height: 394px;
+  }
+  .container {
+    height: 100%;
+    .banner-text {
+      font-size: $font-size-3xl;
+      color: $primary;
+      font-weight: $font-weight-regular;
+      @include desktop {
+        font-size: $font-size-md;
+      }
+      @include pad {
+        font-size: $font-size-sm;
+      }
+    }
+    .banner-title {
+      font-size: $font-size-5xl;
+      color: $primary;
+      font-weight: $font-weight-bold;
+      @include desktop {
+        font-size: $font-size-4xl;
+      }
+      @include pad {
+        font-size: $font-size-2xl;
+      }
+    }
+  }
+}
+// 服務項目區塊
+.index-info {
+  background: #fbf2f2;
+  padding: 32px 15px;
+  color: $primary;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  .info-title {
+    font-size: $font-size-4xl;
+    padding: 28px 0 16px 0;
+    @include desktop {
+      font-size: $font-size-2xl;
+      padding: 8px 0 16px 0;
+    }
+    @include pad {
+      font-size: $font-size-lg;
+      padding: 0 0 4px 0;
+    }
+  }
+  .service-info {
+    width: 24%;
+    @include desktop {
+      width: 50%;
+    }
+    @include pad-sm {
+      width: 100%;
+      padding: 20px 45px; 
+    }
+    h4 {
+      font-weight: $font-weight-medium;
+      font-size: $font-size-lg;
+      padding: 8px 0; 
+    }
+    .service-text {
+      color: $dark;
+      text-align: left;
+    }
+  }
+}
+// 經典系列鏡框區塊
+.index-classic{
+  padding: 30px 0;
+  &-title {
+  font-size: $font-size-4xl;
+  color: $primary;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: $font-weight-bold;
+    @include desktop {
+      font-size: $font-size-2xl;
+    }
+    @include pad {
+      font-size: $font-size-lg;
+      padding-bottom: 4px;
+    }
+  }
+}
+.classic {
+  li:nth-child(2){ //針對sunglasses順序調整
+    flex-direction: row-reverse;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+    }
+    @include pad {
+      position: relative;
+    }
+  }
+}
+.classic-info {
+  padding: 16px 0;
+  text-align: center;
+  &-img {
+    width: 60%;
+    @include desktop {
+      width: 60%;
+      height: auto;
+    }
+    @include pad {
+      width: 100%;
+      
+    }
+  }
+  &-title{
+    // align-items: center;
+    color: $tertiary;
+    font-size: $font-size-4xl;
+    font-style:italic;
+    font-weight: $font-weight-bold;
+    margin: 0 32px;
+    width: 40%;
+    @include desktop {
+      font-size: $font-size-xl;
+      width: 40%;
+    }
+    @include pad {
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+}
+// 聯名設計鏡框區塊
+.index-partner {
+  background: url(../images/week3/bg.png) center center;
+  background-size: cover;
+  &-title {
+    font-size: $font-size-4xl;
+    color: $secondary;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    font-weight: $font-weight-bold;
+      @include desktop {
+        font-size: $font-size-2xl;
+        padding: 40px 0 32px 0;
+      }
+      @include pad {
+        font-size: $font-size-lg;
+        padding: 32px 0 20px 0;
+      }
+  }
+  .partner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    @include desktop {
+      padding-bottom: 56;
+    }
+    @include pad {
+      padding-bottom: 22px;
+    }
+    &-info {
+      display: flex;
+      max-width: 48%;
+      background-color: #ffffff;  //增加白色背景
+      justify-content: center;
+      @include pad {
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
+      &-img {
+        opacity: 0.5;
+      }
+      &-subtitle {
+        font-size: $font-size-6xl;
+        color: $tertiary;
+        font-weight: $font-weight-bold;
+        @include desktop {
+          font-size: $font-size-2xl;     
+        }
+      }
+    }
+  } 
+}
+// 顧客推薦區塊
+.index-recommend{
+  padding: 60px 0 80px 0;
+  @include desktop {
+    padding: 40px 0 56px 0;
+  }
+  @include pad {
+    padding: 32px 0 40px 0;
+  }
+  &-title {
+  font-size: $font-size-4xl;
+  color: $primary;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: $font-weight-bold;
+    @include desktop {
+      font-size: $font-size-2xl;
+    }
+    @include pad {
+      font-size: $font-size-lg;
+      padding-bottom: 4px;
+    }
+  }
+  .recommend-info {
+    max-width: 24%;
+    height: 460px;
+    @include desktop {
+      flex-direction: column;
+      margin-bottom: 32px;
+      max-width: 49%;
+    }
+    @include pad-sm {
+      flex-direction: column;
+      max-width: 100%;
+    }
+    &-img {
+      max-width: 100%;
+      height: auto;
+    }
+    .card-body {
+      font-weight: $font-weight-medium;
+      &-name {
+      font-size: 14px;
+      padding-bottom: 8px;
+      }
+      &-time {
+      font-size: 14px;
+      color: $text-color;
+      position: absolute;
+      bottom: 16px;
+      }
+    }
+  } 
+}
+// 聯絡我們區塊
+.index-contact {
+  background: #FBF2F2;
+  padding: 60px 0 80px 0;
+  @include desktop {
+    padding: 40px 0 56px 0;
+  }
+  @include pad {
+    padding: 32px 0 40px 0;
+  }
+  &-title {
+  font-size: $font-size-4xl;
+  color: $dark;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: $font-weight-bold;
+    @include desktop {
+      font-size: $font-size-2xl;
+    }
+    @include pad {
+      font-size: $font-size-lg;
+      padding-bottom: 4px;
+    }
+  }
+  .form-contact{
+    max-width: 730px;
+    margin: 0 auto;
+    @include desktop {
+      max-width: 450px;
+    }
+    @include pad {
+      max-width: 345px;
+    }
+    p {
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+      padding-bottom: 4px;
+      @include desktop {
+        font-size: $font-base;
+        padding-bottom: 16px;
+      }
+      @include pad {
+        padding-bottom: 8px;
+      }
+    }
+    .form-item {
+      margin-top: 16px;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      background: #FBF2F2;
+      border: 1px solid $dark;
+      padding-left: 16px;
+      font-size: $font-base;
+    }
+    .suggestion {
+      width: 100%;
+      height: 136px;
+      background: #FBF2F2;
+      padding-left: 16px;
+      @include desktop {
+        height: 100px;
+      };
+    }
+    label {
+      margin-bottom: 0.3rem;
+      font-weight: $font-weight-medium;
+    }
+    .form-check {
+      padding-left: 0.8rem;
+      padding-top: 16px;
+      .form-agree {
+      width: 24px;
+      height: 24px;
+      background: #FBF2F2;
+      justify-content: flex-start;
+      }
+      .form-agree-label {
+        align-items: center;
+      }
+    }
+    .submit {
+      width: 350px;
+      height: 54px;
+      background: $tertiary;
+      color: $secondary;
+      margin: 0 auto;
+      border: none;
+      font-weight: $font-weight-medium;
+      margin-top: 40px;
+      @include desktop {
+        width: 210px;
+        height: 40px;
+        margin-top: 20px;
+      }
+      @include pad {
+        width: 165px;
+        height: 36px;
+      }
+    }  
+  }
+}
+
+
+
